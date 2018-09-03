@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            position: absolute;
+            top: 20px;
+            left: 200px;
+            background: rgb(250, 242, 242);
+        }
+        svg{
+            stroke: #000;
+            stroke-width: 2px;
+        }
+        circle{
+            fill: rgba(0, 0, 255, 0.788);
+        }
+        ellipse{
+            fill: #fff;
+        }
+        .eyes{
+            fill: #000;
+        }
+        .face{
+            fill: #fff;
+            stroke: #000;
+            stroke-width: 2px;
+        }
+        #nose{
+            fill: red;
+        }
+        #smallNose{
+            fill: aliceblue;
+            stroke: none;
+        }
+        .neck{
+            stroke-linecap: round;
+            stroke: red;
+            stroke-width: 30px;
+        }
+        .myBody{
+            fill: rgba(0, 0, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <svg width = "750px" height = "800px">
+            <circle r="175" cx="370" cy="180"></circle>
+            
+            <polygon points="260 330,190 290,190 330,260 370,260 530,478 530,478 370,548 330,548 290,478 330,260 330" class="myBody"></polygon>
+            <circle r="80" cx="370" cy="385"  style="fill:#fff"></circle>
+            <ellipse class="face" rx="140" ry="110" cx="370" cy="230"></ellipse>
+            <ellipse rx="40" ry="50" cx="330" cy="130"></ellipse>
+            <ellipse rx="40" ry="50" cx="410" cy="130"></ellipse>
+            <ellipse class="eyes" rx="8" ry="10" cx="331" cy="140"></ellipse>
+            <ellipse class="eyes" rx="8" ry="10" cx="411" cy="140"></ellipse>
+            <circle r="15" cx="370" cy="188" id="nose"></circle>
+            <ellipse rx="6" ry="7" cx="376" cy="184" id="smallNose"></ellipse>
+            <line x1="371" y1="203" x2="371" y2="290" style="stroke:#000;stroke-width:2px"></line>
+            <path d="M290 264 C343 300 396 300 450 264" style="fill:none;stroke:black;stroke-width:2"></path>
+            
+            <line x1="251" y1="203" x2="351" y2="213" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="251" y1="228" x2="351" y2="226" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="251" y1="253" x2="351" y2="238" style="stroke:#000;stroke-width:2px"></line>
+            
+            <line x1="391" y1="213" x2="491" y2="208" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="391" y1="226" x2="491" y2="228" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="391" y1="238" x2="491" y2="250" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="270" y1="325" x2="470" y2="325" class="neck"></line>
+            <circle r="20" cx="373" cy="345" id="nose" style="fill:rgba(255, 217, 4, 1)"></circle>
+            <circle r="5" cx="373" cy="355" style="fill:black"></circle>
+            <line x1="358" y1="330" x2="388" y2="330" style="stroke:#000;stroke-width:2px"></line>
+            <line x1="353" y1="338" x2="392" y2="338" style="stroke:#000;stroke-width:2px"></line>
+            <circle r="30" cx="170" cy="305"  style="fill:#fff"></circle>
+            <circle r="30" cx="565" cy="305"  style="fill:#fff"></circle>
+            <path d="M330 400 C352 460 390 460 410 400 Z" style="fill:none;stroke:black;stroke-width:2"></path>
+            
+            <ellipse rx="65" ry="23" cx="280" cy="530"></ellipse>
+            <ellipse rx="65" ry="23" cx="460" cy="530"></ellipse>
+
+            <path d="M346 531 C360 511 375 511 394 531" style="fill:rgb(250, 242, 242);stroke:black"></path>
+            
+
+        </svg> 
+    </div>
+</body>
+</html>
